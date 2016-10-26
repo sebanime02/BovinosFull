@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#E8F5E9"
+    android:gravity="center_vertical"
+    tools:context="com.example.pablosanjuan.core.controlers.plan_vacunacion.RegistrarVacuna2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp"
+        android:text="Vacunas:"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TableLayout
+
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="@+id/textView"
+        android:layout_below="@+id/textView"
+
+
+        android:id="@+id/tableLayout_vacunas">
+
+
+
+
+        <TableRow android:gravity="center_horizontal" android:layout_width="wrap_content">
+            <CheckBox android:id="@+id/checkbox1"
+                android:text="Fiebre Aftosa"/>
+            <CheckBox android:id="@+id/checkbox2"
+                android:text="Carbón Sintomático"/>
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal" >
+            <CheckBox android:id="@+id/checkbox3"
+                android:text="Rabia"/>
+            <CheckBox android:id="@+id/checkbox4"
+                android:text="Edema Maligno"/>
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal" >
+
+            <CheckBox android:id="@+id/checkbox5"
+                android:text="Septicemia Hemorrágica"/>
+            <CheckBox android:id="@+id/checkbox6"
+                android:text="Carbón bacteridiano"/>
+        </TableRow>
+        <TableRow   android:gravity="center_horizontal">
+
+            <CheckBox  android:id="@+id/checkbox7"
+                android:text="Brucelosis"/>
+            <CheckBox  android:id="@+id/checkbox8"
+                android:visibility="invisible"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+    <Button
+        android:id="@+id/btn_otro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Otra"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_below="@+id/tableLayout_vacunas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_below="@+id/tableLayout_vacunas"
+
+        android:id="@+id/btn_guardar_pv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Guardar"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/md_white_1000"
+        android:background="@color/md_green_500"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:visibility="invisible"
+        android:id="@+id/linear"
+        android:orientation="vertical"
+
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:imeOptions="actionNext"
+            android:id="@+id/edt_nom_vacuna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nombre Vacuna"/>
+        <EditText
+
+            android:imeOptions="actionNext"
+            android:id="@+id/edt_dosis_vacuna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Dosis(eje:5ml,6cm...)"
+            />
+        <Spinner
+            android:id="@+id/sp_via_vacuna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Vía Administración"/>
+    </LinearLayout>
+
+</RelativeLayout>

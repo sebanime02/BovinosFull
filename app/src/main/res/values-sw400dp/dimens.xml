@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="padding_le">30sp</dimen>
+    <dimen name="elemento_inventario_img">160dp</dimen>
+    <dimen name="elemento_text_size">18sp</dimen>
+    <dimen name="elemento_text_size_ultimos">16sp</dimen>
+    <dimen name="dimen_drawer">300dp</dimen>
+
+</resources>

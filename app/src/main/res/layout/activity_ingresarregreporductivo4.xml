@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#E8F5E9"
+    tools:context="com.example.pablosanjuan.core.controlers.inventario.IngresarBovino">
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cría"/>
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/rdgGrupo_reg_crias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rdgVivo"
+                android:text="Vivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rdgMuerto"
+                android:text="Muerto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/rdgGrupo_reg_sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rdg_nac_macho"
+            android:text="Macho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rdg_nac_hembra"
+            android:text="Hembra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Intervalo Entre Partos:"/>
+    <EditText
+        android:imeOptions="actionNext"
+        android:id="@+id/edt_inter_partos"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Intervalo Entre Partos"
+        android:maxLines="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dias Vacios: "/>
+    <EditText
+        android:imeOptions="actionNext"
+        android:id="@+id/edt_dias_vacios"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dias Vacios"
+        android:maxLines="1"/>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_atras_ing_rep_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atras"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+        <Button
+            android:id="@+id/btn_siguiente_ing_rep_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finalizar"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/md_white_1000"
+            android:background="@color/md_green_500"/>
+    </RelativeLayout>
+</LinearLayout>

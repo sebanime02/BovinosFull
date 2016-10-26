@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/item_navigation_drawer_inventario"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="@string/title_section1" />
+        <item
+            android:id="@+id/item_navigation_drawer_registro_repro"
+            android:icon="@drawable/ic_action_toggle_star"
+            android:title="@string/title_section2" />
+
+            <item
+                android:id="@+id/item_navigation_drawer_registro_productivo"
+                android:title="@string/title_section3" >
+                <menu>
+                    <item
+                        android:id="@+id/item_navigation_drawer_leche"
+
+                        android:title="Leche" />
+                    <item
+                        android:id="@+id/item_navigation_drawer_ceba"
+
+                        android:title="Ceba" />
+                </menu>
+
+            </item>
+
+
+        <item
+            android:id="@+id/item_navigation_drawer_planVacu"
+            android:icon="@drawable/ic_action_toggle_star"
+            android:title="@string/title_section4" />
+        <item
+            android:id="@+id/item_navigation_drawer_controlSani"
+            android:icon="@drawable/ic_action_toggle_star"
+            android:title="@string/title_section5" />
+        <item
+            android:id="@+id/item_navigation_drawer_registroManejo"
+            android:icon="@drawable/ic_action_toggle_star"
+            android:title="@string/title_section6" />
+        <item
+            android:id="@+id/item_navigation_drawer_gestionPraderas"
+            android:icon="@drawable/ic_action_toggle_star"
+            android:title="@string/title_section7" />
+        <item
+            android:id="@+id/item_navigation_drawer_registro_alimen"
+            android:icon="@drawable/ic_action_toggle_star"
+            android:title="@string/title_section8" />
+        <item
+            android:id="@+id/item_navigation_drawer_acerca_de"
+            android:icon="@drawable/ic_action_action_help"
+            android:title="@string/title_section10" />
+        <item
+            android:id="@+id/item_navigation_drawer_cerrar_sesion"
+            android:icon="@drawable/atras"
+            android:title="@string/title_section9" />
+    </group>
+
+</menu>

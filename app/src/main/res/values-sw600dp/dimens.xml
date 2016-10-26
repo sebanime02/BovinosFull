@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_logo_size">300dp</dimen>
+    <dimen name="ceotic_logo_size">80dp</dimen>
+    <dimen name="login_txt_app_size">40sp</dimen>
+    <dimen name="login_margin_top_small">20dp</dimen>
+    <dimen name="login_margin_top_big">30dp</dimen>
+    <dimen name="padding_left">60dp</dimen>
+    <dimen name="padding_le">50sp</dimen>
+    <dimen name="elemento_inventario_img">180dp</dimen>
+    <dimen name="elemento_text_size">20sp</dimen>
+    <dimen name="elemento_text_size_ultimos">17sp</dimen>
+    <dimen name="dimen_drawer">350dp</dimen>
+    <dimen name="img_vacuna">150dp</dimen>
+</resources>

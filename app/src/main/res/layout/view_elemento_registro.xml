@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto" android:layout_height="match_parent" android:layout_width="match_parent" >
+    <!-- A CardView that contains a TextView -->
+<android.support.v7.widget.CardView
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:id="@+id/card_view"
+android:layout_gravity="center"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="10dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardPreventCornerOverlap="false">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/foto_perfil_bovino"
+            android:layout_width="@dimen/elemento_inventario_img"
+            android:layout_height="@dimen/elemento_inventario_img"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/vaca_logo"/>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_le"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/registro1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registro"/>
+            <TextView
+                android:id="@+id/registro2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registro1"
+                android:text="Registro"/>
+            <TextView
+                android:id="@+id/registro3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registro2"
+                android:text="Registro"/>
+            <TextView
+                android:id="@+id/registro4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registro3"
+                android:text="Registro"/>
+            <TextView
+                android:id="@+id/registro5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registro4"
+                android:text="Registro"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>
+

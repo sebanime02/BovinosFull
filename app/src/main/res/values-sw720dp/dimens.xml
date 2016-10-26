@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="elemento_text_size">28sp</dimen>
+    <dimen name="elemento_text_size_ultimos">22sp</dimen>
+    <dimen name="padding_le">80sp</dimen>
+    <dimen name="elemento_inventario_img">200dp</dimen>
+    <dimen name="dimen_drawer">400dp</dimen>
+    <dimen name="img_vacuna">200dp</dimen>
+</resources>

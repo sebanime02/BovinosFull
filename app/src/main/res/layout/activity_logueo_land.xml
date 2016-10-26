@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/md_white_1000"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    >
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="@dimen/login_logo_size"
+                android:layout_height="@dimen/login_logo_size"
+                android:src="@drawable/logo_ganko"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ganko Bovinos"
+                android:textColor="@color/md_green_500"
+                android:textSize="@dimen/login_txt_app_size"
+                android:layout_marginTop="@dimen/login_margin_top_small"
+                />
+            <ImageView
+                android:layout_width="@dimen/ceotic_logo_size"
+                android:layout_height="@dimen/ceotic_logo_size"
+                android:src="@drawable/logo_ceoti"
+                />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:stretchColumns="*"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:imeOptions="actionNext"
+                    android:id="@+id/edt_usuario"
+                    android:layout_marginTop="@dimen/login_margin_top_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/login_txt_user"
+                    />
+                <EditText
+                    android:imeOptions="actionNext"
+                    android:id="@+id/edt_contraseña"
+                    android:layout_marginTop="@dimen/login_margin_top_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/login_txt_pass"
+                    />
+
+            </LinearLayout>
+
+            <TableRow>
+                <Button
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:id="@+id/btn_registro"
+                    android:layout_height="wrap_content"
+                    android:text="Registrarse"
+                    />
+                <Button
+                    android:id="@+id/btn_validar"
+                    android:layout_height="wrap_content"
+                    android:hint="@color/primary"
+                    android:text="Ingresar"
+                    android:textColor="@color/md_white_1000"
+                    android:background="#1abc11"
+                    />
+            </TableRow>
+
+        </TableLayout>
+    </TableRow>
+
+
+</TableLayout>

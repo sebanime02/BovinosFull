@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.pablosanjuan.core.controlers.plan_vacunacion.FragPlanVacunacion">
+    <item android:id="@+id/verpv" android:title="Ver"
+    android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/regispv" android:title="Registrar Vacuna"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

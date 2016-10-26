@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#E8F5E9"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.pablosanjuan.core.controlers.inventario.FragInventario$PlaceholderFragment">
+    <TextView
+        android:textSize="30dp"
+        android:textColor="@color/md_green_500"
+        android:id="@+id/info_reproductivo"
+        android:gravity="center"
+        android:text="Registro Reproductivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/lista_frag2"
+        android:layout_below="@+id/info_reproductivo"
+        android:layout_marginRight="@dimen/activity_horizontal_margin2"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/btn_add_reg_reproductivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="9dp"
+        fab:fab_colorNormal="@color/md_green_500"
+        fab:fab_colorPressed="@color/md_green_500_50"
+        android:src="@android:drawable/ic_menu_add"/>
+</RelativeLayout>

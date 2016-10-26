@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#E8F5E9"
+    tools:context="com.example.pablosanjuan.core.controlers.inventario.FragInventario$PlaceholderFragment">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv1"
+        android:textColor="@color/md_green_500"
+        android:text="Lista de Controles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"/>
+
+
+    <ListView
+        android:layout_below="@+id/tv1"
+        android:id="@+id/lista5"
+        android:gravity="center"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5sp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin2"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/btn_agregar_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|right"
+        fab:fab_colorNormal="@color/md_green_500"
+        fab:fab_colorPressed="@color/md_green_500_50"
+        android:layout_margin="9dp"
+        android:text="Agregar"/>
+
+</RelativeLayout>
